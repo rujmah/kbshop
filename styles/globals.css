@@ -10,7 +10,18 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+a:hover {
+  background-color: yellow;
+}
+a:focus {
+  background-color: orange;
+}
 * {
   box-sizing: border-box;
+}
+
+.box {
+  border: 0.05rem solid grey;
+  margin: 1rem;
+  padding: 0.25rem;
 }

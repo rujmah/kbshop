@@ -1,14 +1,11 @@
-import Head from "next/head";
 import Link from "next/link";
+import Header from "../components/Header";
 
 const Home = () => {
   return (
-    <div>
-      <Head>
-        <title>Keycaps Shop</title>
-      </Head>
+    <>
+      <Header />
       <div className="container">
-        <h1 className="box">Keycaps Shop</h1>
         <div className="box">
           <div className="box">
             <Link href="/stock/Teddy%20Bear">
@@ -27,7 +24,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

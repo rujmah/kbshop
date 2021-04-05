@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
-import Head from "next/head";
-import Link from "next/link";
+import Header from "../../components/Header";
 
 const Item = () => {
   const router = useRouter();
@@ -8,14 +7,7 @@ const Item = () => {
 
   return (
     <div className="container">
-      <Head>
-        <title>Shop: {item} </title>
-      </Head>
-      <h1 className="box">
-        <Link href="/">
-          <a>Keycaps Shop</a>
-        </Link>
-      </h1>
+      <Header item={item} />
 
       <div className="item-container box">
         <div className="item-title box">Title: {item} </div>
